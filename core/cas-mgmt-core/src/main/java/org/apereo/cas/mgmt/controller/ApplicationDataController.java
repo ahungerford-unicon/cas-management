@@ -94,6 +94,8 @@ public class ApplicationDataController {
                 .anyMatch(s -> s.getValue().contains("OAuth") || s.getValue().contains("Oidc")));
         config.setSamlEnabled(formData.getServiceTypes().stream()
                 .anyMatch(s -> s.getValue().contains("Saml")));
+        // config.setWsFedEnabled(formData.getServiceTypes().stream()
+        //         .anyMatch(s -> s.getValue().contains("WS Federation")));
         config.setAttributeStoreEnabled(managementProperties.isAttributeStoreEnabled());
         config.setSubmissionsEnabled(managementProperties.getSubmissions().isEnabled());
         return config;

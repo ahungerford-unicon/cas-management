@@ -9,6 +9,7 @@ export class AppConfig {
   contactLookup: boolean;
   oauthEnabled: boolean;
   samlEnabled: boolean;
+  wsfedEnabled: boolean;
   attributeStoreEnabled: boolean;
   submissionsEnabled: boolean;
 }

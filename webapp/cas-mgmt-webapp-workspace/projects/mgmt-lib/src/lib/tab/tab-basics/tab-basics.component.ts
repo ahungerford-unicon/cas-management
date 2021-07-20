@@ -48,7 +48,7 @@ export class TabBasicsComponent {
   /**
    * Returns true if the current service is an instance of OAuthRegisteredService.
    */
-  isOauth(): boolean {
+   isOauth(): boolean {
     return OAuthRegisteredService.instanceOf(this.service.registeredService)
       || OidcRegisteredService.instanceOf(this.service.registeredService);
   }
@@ -59,4 +59,12 @@ export class TabBasicsComponent {
   isSaml(): boolean {
     return SamlRegisteredService.instanceOf(this.service.registeredService);
   }
+
+  /**
+   * Returns true if the current service is an instance of OAuthRegisteredService.
+   */
+   isWsFed(): boolean {
+    return WSFederationRegisterdService.instanceOf(this.service.registeredService);
+  }
+
 }

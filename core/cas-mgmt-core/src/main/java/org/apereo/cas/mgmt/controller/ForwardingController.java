@@ -28,6 +28,7 @@ public class ForwardingController {
         "management/registry/import",
         "management/registry/oauth",
         "management/registry/saml",
+        "management/registry/wsfed",
         "management/registry/metadata/{id}",
         "management/version-control/history/{fileName}",
         "management/version-control/localChanges",

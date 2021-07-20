@@ -50,6 +50,11 @@ public class AppConfig {
     private boolean samlEnabled;
 
     /**
+     * Flag indicating if SAML services are enabled.
+     */
+    private boolean wsfedEnabled;
+
+    /**
      * Flag indicating if Atrribute Definition Store is enabled.
      */
     private boolean attributeStoreEnabled;

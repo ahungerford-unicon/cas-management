@@ -101,6 +101,13 @@ export class NavigationComponent {
   /**
    * Returns true if SAML authentication is configured.
    */
+   isWsFed(): boolean {
+    return this.appService.config.wsfedEnabled;
+  }
+
+  /**
+     * Returns true if SAML authentication is configured.
+     */
   isSaml(): boolean {
     return this.appService.config.samlEnabled;
   }
